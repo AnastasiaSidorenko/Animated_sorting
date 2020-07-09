@@ -1,0 +1,14 @@
+{
+  "name": "AnimatedSorting",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "author": "Anastasia Sidorenko",
+  "license": "ISC",
+  "prettier": {
+    "tabWidth": 3
+  },
+  "dependencies": {
+    "prettier": "^2.0.5"
+  }
+}
