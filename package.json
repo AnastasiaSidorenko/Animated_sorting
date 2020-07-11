@@ -1,10 +1,13 @@
 {
-  "name": "AnimatedSorting",
+  "name": "Animated_Sorting",
   "version": "1.0.0",
   "description": "",
   "type": "module",
   "author": "Anastasia Sidorenko",
   "license": "ISC",
+  "scripts": {
+    "prettier": "prettier --use-tabs --write ‘public/js/*.js’"
+  },
   "prettier": {
     "tabWidth": 3
   },

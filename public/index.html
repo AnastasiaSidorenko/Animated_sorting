@@ -2,31 +2,48 @@
 <html lang="ru">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/style.css">
-  <script type="module" src="js/app.js" defer></script>
-  <title>Анимированная сортировка</title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="css/style.css">
+   <script type="module" src="js/app.js" defer></script>
+   <title>Анимированная сортировка</title>
 </head>
 
 <body>
-  <div class="container">
-    <h2 class="title">Анимированная сортировка пузырьком</h2>
-    <div>Инструкция:</div>
-    <div>
-      <label>Количество: </label>
-      <input type="number" min="2" placeholder="количество элементов для сортировки" maxLength="2"
-        id="arrayNumbersQuantity" />
-      <button id="generateArrayButton">Сгенерировать</button>
-      <button>Запустить сортировку</button>
-    </div>
-    <div class="flex-column bubbles">
-    </div>
-  </div>
+   <div class="container">
+      <h2 class="title">Анимированная сортировка пузырьком</h2>
+      <div class="block">
+         <div class="instruction">Инструкция:
+            <div>1. Указать в поле "Количество", сколько чисел должно быть в массиве (от 2 до 99)</div>
+            <div>2. Нажать на кнопку "Запустить сортировку", чтобы сгенерировать массив чисел и запустить отображение
+               сортировки</div>
+         </div>
 
-  <template id="bubble_tmpl">
-    <div class="bubble"><span>1</span></div>
-  </template>
+         <div class="control">
+            <div class="form_quantity">
+               <label>Количество: </label>
+               <input type="number" min="2" maxLength="2" id="arrayNumbersQuantity" />
+            </div>
+            <div class="form_start">
+               <button class="button button-orange" id="generateArrayButton">Запустить сортировку</button>
+            </div>
+         </div>
+      </div>
+      <div class="output_data-container">
+         <div class="output_data">
+            <div class="array-container">Входной массив: <div id="initial_array" class="array"></div>
+            </div>
+            <div class="array-container">Выходной массив: <div id="result_array" class="array"></div>
+            </div>
+         </div>
+         <div class="flex-column bubbles">
+         </div>
+      </div>
+   </div>
+
+   <template id="bubble_tmpl">
+      <div class="bubble"><span>1</span></div>
+   </template>
 </body>
 
 </html>
